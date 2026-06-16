@@ -1,17 +1,65 @@
-# task_flow_manager
+# TaskFlow 🚀
 
-A new Flutter project.
+A simple and scalable Flutter Todo application built using **Bloc**, **Cubit**, and **Clean Architecture** principles.
 
-## Getting Started
+## 📱 Features
 
-This project is a starting point for a Flutter application.
+### Authentication
+- Splash Screen
+- Login Screen
+- Session Persistence using SharedPreferences
+- Auto-login for authenticated users
 
-A few resources to get you started if this is your first Flutter project:
+### Task Management
+- Add Tasks
+- Edit Tasks
+- Delete Tasks
+- Mark Tasks as Completed
+- Toggle Task Status
+- Strike-through Completed Tasks
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### State Management
+- Cubit for Authentication & Splash Flow
+- Bloc for Task Management
+- Reactive UI Updates
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🏗️ Architecture
+
+```text
+lib/
+├── core/
+│   ├── themes/
+│   └── constants/
+│
+├── features/
+│   ├── splash/
+│   │   ├── presentation/
+│   │   │   ├── cubit/
+│   │   │   └── pages/
+│   │
+│   ├── auth/
+│   │   ├── presentation/
+│   │   │   ├── cubit/
+│   │   │   └── pages/
+│   │
+│   └── task/
+│       ├── data/
+│       │   └── models/
+│       │
+│       └── presentation/
+│           ├── bloc/
+│           ├── pages/
+│           └── widgets/
+```
+
+
+## 👨‍💻 Author
+
+**Jency Sebasthiyar**
+
+GitHub:
+https://github.com/Arockia-Jency
+
+---
+
+Built with Flutter ❤️
